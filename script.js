@@ -17,3 +17,7 @@ modal.addEventListener("click", function () {
     modal.classList.add("hidden");
   }
 });
+
+window.addEventListener("keydown", function (event) {
+  if (event.key == "Escape") modal.classList.add("hidden");
+});
